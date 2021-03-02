@@ -1,10 +1,10 @@
-package com.joshayoung.basicspringwebapp.domain.bootstrap;
+package com.joshayoung.basicspringwebapp.bootstrap;
 
 import com.joshayoung.basicspringwebapp.domain.Author;
 import com.joshayoung.basicspringwebapp.domain.Publisher;
-import com.joshayoung.basicspringwebapp.domain.repositories.AuthorRepository;
-import com.joshayoung.basicspringwebapp.domain.repositories.BookRepository;
-import com.joshayoung.basicspringwebapp.domain.repositories.PublisherRepository;
+import com.joshayoung.basicspringwebapp.repositories.AuthorRepository;
+import com.joshayoung.basicspringwebapp.repositories.BookRepository;
+import com.joshayoung.basicspringwebapp.repositories.PublisherRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import com.joshayoung.basicspringwebapp.domain.Book;

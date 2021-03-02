@@ -1,4 +1,4 @@
-package com.joshayoung.basicspringwebapp.domain.repositories;
+package com.joshayoung.basicspringwebapp.repositories;
 
 import org.springframework.data.repository.CrudRepository;
 import com.joshayoung.basicspringwebapp.domain.Publisher;
