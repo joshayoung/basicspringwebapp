@@ -1,10 +1,9 @@
 package com.joshayoung.basicspringwebapp.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 public class Author {
@@ -43,6 +42,17 @@ public class Author {
     @Override
     public int hashCode() {
         return Objects.hash(id);
+    }
+
+    @ManyToMany(mappedBy = "authors")
+    private Set<Book> books = new HashSet<>();
+
+    public Set<Book> getBooks() {
+        return books;
+    }
+
+    public void setBooks(Set<Book> books) {
+        this.books = books;
     }
 
     public Long getId() {
